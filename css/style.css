@@ -1,0 +1,246 @@
+body{
+    background-color: #000;
+}
+
+/**************************loading *************************/
+.loadingScreen{
+  display: flex;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #0D0D0D;
+  color: white;
+  z-index: 9999999999999999999999999;
+}
+
+.lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #fff;
+  margin: -4px 0 0 -4px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*********************** nav button *********************/
+
+/****************************** nav style  ********************** */
+nav{
+    width: 350px;
+    background-color: blue;
+    left: -283.84px !important;
+}
+.left-nav{
+  width: 83%;
+}
+.left-nav ul li {
+    padding-top: 15px;
+    cursor: pointer;
+}
+.right-nav ul li {
+    cursor: pointer;
+}
+.right-nav img{
+    width: 50px
+}
+
+/* .nav-top-links{
+    display: none;
+}
+.nav-down-links{
+    display: none;
+} */
+
+.nav-in{
+  transform: translateX(283.84px);
+  transition: 0.5s;
+}
+.nav-out{
+  transform: translateX(0px);
+  transition: 0.5s;
+}
+
+
+.animate__animated.animate__slideInDown{
+  --animate-duration: 1s;
+}
+
+.close,.open{
+  cursor: pointer;
+}
+
+/******************************************************* Home *************************************************************/
+.overlay{
+  top: 0%;
+  bottom: 0%;
+  left: 12px;
+  right: 12px;
+  transform: translateY(100%);
+  transition: 0.5s;
+  background-color: rgba(240, 248, 255, 0.705);
+}
+.meal:hover .overlay{
+  transform: translateY(0%);
+}
+
+/******************************Searh**************************************************/
+.form-control {
+background-color: #000;
+color: #fff !important;
+}
+.form-control:focus{
+background-color: #000;
+color: #fff !important;
+}
+
+::placeholder{
+  color: #ffffff8e !important;
+  font-weight: lighter;
+}
+
+/******************************category******************************/
+.categoryDDesc{
+  overflow: hidden;
+
+}
+
+/*************************************area************************************/
+
+.areaIcon{
+  font-size: 70px !important;
+}
+
+.ingrediantDesc{
+  overflow: hidden !important;
+  max-height: 70px;
+}
+/***********************************ingradient**********************************************************/
+.ingrad-list li{
+  background-color: #CFF4FC;
+  color: #066a8f;
+  padding:7px 10px;
+  border-radius: 8px;
+}
+
+.type{ 
+  width: fit-content;
+  background-color: #F8D7DA;
+  color: #93205C;
+  padding:7px 10px;
+  border-radius: 8px;
+}
+
+.ingradSrc li{
+  background-color: #CFF4FC;
+  color: #fff;
+  padding:7px 10px;
+  border-radius: 8px;
+}
+.ingradSrc .scr{
+  background-color: #157347;
+}
+.ingradSrc .yout{
+  background-color: #BB2D3B;
+}
+
+@media screen and (max-width:600px){
+  .detealsPage{
+    width: 330px;
+    /* padding-left: 15px; */
+  }
+
+
+  .contact-cont{
+    width: 100%;
+  }
+}
+
+/*******************************************contact******************************************/
+
+
+.form-control.contact-input {
+  background-color: #FFF;
+  color: #000 !important;
+}
+.form-control.contact-input::placeholder {
+  color: #000 !important;
+}
+
